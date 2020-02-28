@@ -8,7 +8,7 @@ export default () => {
     <Footer>
       <Wrapper>
         <FooterInner>
-          <span>This is a footer</span>
+          <span>Here is a footer</span>
         </FooterInner>
       </Wrapper>
     </Footer>

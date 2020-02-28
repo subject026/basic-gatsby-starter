@@ -9,9 +9,9 @@ export default () => {
   return (
     <Layout>
       <SEO title="Index Page" />
-      <Hero />
+      <Hero title="Here is a page title" />
       <TextContent>
-        <p>This is some text content.</p>
+        <p>Here is some text content.</p>
       </TextContent>
     </Layout>
   );

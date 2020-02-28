@@ -8,7 +8,7 @@ export default () => {
     <Header>
       <Wrapper>
         <HeaderInner>
-          <SiteTitle>This is the header</SiteTitle>
+          <SiteTitle>Here is a header</SiteTitle>
         </HeaderInner>
       </Wrapper>
     </Header>

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Hero = styled.section`
   height: 300px;
-  background-color: purple;
+  background-color: #32107a;
   color: white;
   h1 {
     font-size: 60px;

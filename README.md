@@ -1,6 +1,6 @@
 # Basic Gatsby Starter
 
-My barebones gatsby starter including styled components.
+My barebones gatsby starter including styled components and some basic layout components.
 
 Based on the [gatsby hello world starter](https://github.com/gatsbyjs/gatsby-starter-hello-world).
 
