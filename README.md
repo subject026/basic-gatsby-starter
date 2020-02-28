@@ -4,6 +4,12 @@ My barebones gatsby starter including styled components and some basic layout co
 
 Based on the [gatsby hello world starter](https://github.com/gatsbyjs/gatsby-starter-hello-world).
 
+Get going with
+
+```bash
+npx gedit subject026/basic-gatsby-starter project-name
+```
+
 Readme from that repo is below.
 
 ---
