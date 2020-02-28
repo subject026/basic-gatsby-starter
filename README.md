@@ -7,7 +7,7 @@ Based on the [gatsby hello world starter](https://github.com/gatsbyjs/gatsby-sta
 Get going with
 
 ```bash
-npx gedit subject026/basic-gatsby-starter project-name
+npx degit subject026/basic-gatsby-starter project-name
 ```
 
 Readme from that repo is below.
