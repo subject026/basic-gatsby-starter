@@ -16,7 +16,7 @@ const FooterInner = styled.div`
   align-items: center;
 `;
 
-const Footer = (): React.ReactElement => {
+const Footer: React.FC = (): React.ReactElement => {
   return (
     <Container>
       <Wrapper>

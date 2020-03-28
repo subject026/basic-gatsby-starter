@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Hero from "../components/Hero";
 
-const Index = (): React.ReactElement => {
+const Index: React.FC = (): React.ReactElement => {
   return (
     <Layout>
       <SEO title="Index Page" />

@@ -40,11 +40,11 @@ const Main = styled.main`
   margin: 0;
 `;
 
-type LayoutPropsType = {
+type TLayoutProps = {
   children: React.ReactNode;
 };
 
-const Layout: React.FC = (props: LayoutPropsType): React.ReactElement => {
+const Layout: React.FC = (props: TLayoutProps): React.ReactElement => {
   const { children } = props;
   return (
     <>

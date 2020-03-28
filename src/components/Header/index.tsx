@@ -19,7 +19,7 @@ const SiteTitle = styled.span`
   font-weight: 600;
 `;
 
-const Header = (): React.ReactElement => {
+const Header: React.FC = (): React.ReactElement => {
   return (
     <Container>
       <Wrapper>
