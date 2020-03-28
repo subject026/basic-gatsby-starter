@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Wrapper from "../util/Wrapper";
 
 const Container = styled.header`
-  height: ${props => props.theme.layout.headerHeight};
+  height: ${(props): string => props.theme.layout.headerHeight};
   color: #202020;
 `;
 
@@ -19,7 +19,7 @@ const SiteTitle = styled.span`
   font-weight: 600;
 `;
 
-const Header = () => {
+const Header = (): React.ReactElement => {
   return (
     <Container>
       <Wrapper>

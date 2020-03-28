@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 
-import Wrapper from "../util/Wrapper.js";
+import Wrapper from "../util/Wrapper";
 
 const Container = styled.footer`
-  height: ${props => props.theme.layout.footerHeight};
+  height: ${(props): string => props.theme.layout.footerHeight};
   margin: 0;
   background-color: #202020;
   color: white;
@@ -16,7 +16,7 @@ const FooterInner = styled.div`
   align-items: center;
 `;
 
-const Footer = () => {
+const Footer = (): React.ReactElement => {
   return (
     <Container>
       <Wrapper>

@@ -33,14 +33,19 @@ const Main = styled.main`
   min-height: calc(
     100vh -
       (
-        ${props => props.theme.layout.footerHeight} +
-          ${props => props.theme.layout.headerHeight}
+        ${(props): string => props.theme.layout.footerHeight} +
+          ${(props): string => props.theme.layout.headerHeight}
       )
   );
   margin: 0;
 `;
 
-const Layout = ({ children }) => {
+type LayoutPropsType = {
+  children: React.ReactNode;
+};
+
+const Layout: React.FC = (props: LayoutPropsType): React.ReactElement => {
+  const { children } = props;
   return (
     <>
       <Globals />

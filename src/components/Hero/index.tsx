@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-import Wrapper from "../util/Wrapper.js";
+import Wrapper from "../util/Wrapper";
 
-const Hero = styled.section`
+const Container = styled.section`
   height: 300px;
   background-color: #32107a;
   color: white;
@@ -18,14 +18,21 @@ const HeroInner = styled.div`
   align-items: center;
 `;
 
-export default ({ title }) => {
+type THeroProps = {
+  title: string;
+};
+
+const Hero: React.FC<THeroProps> = (props: THeroProps): React.ReactElement => {
+  const { title } = props;
   return (
-    <Hero>
+    <Container>
       <Wrapper>
         <HeroInner>
           <h1>{title}</h1>
         </HeroInner>
       </Wrapper>
-    </Hero>
+    </Container>
   );
 };
+
+export default Hero;
