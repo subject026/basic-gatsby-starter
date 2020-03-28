@@ -1,16 +1,31 @@
 import React from "react";
+import styled from "styled-components";
 
-import Footer, { FooterInner } from "./footer.css.js";
 import Wrapper from "../util/Wrapper.js";
 
-export default () => {
+const Container = styled.footer`
+  height: ${props => props.theme.layout.footerHeight};
+  margin: 0;
+  background-color: #202020;
+  color: white;
+`;
+
+const FooterInner = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+const Footer = () => {
   return (
-    <Footer>
+    <Container>
       <Wrapper>
         <FooterInner>
           <span>Here is a footer</span>
         </FooterInner>
       </Wrapper>
-    </Footer>
+    </Container>
   );
 };
+
+export default Footer;
