@@ -1,16 +1,34 @@
 import React from "react";
+import styled from "styled-components";
 
-import { Header, HeaderInner, SiteTitle } from "./header.css";
 import Wrapper from "../util/Wrapper";
 
-export default () => {
+const Container = styled.header`
+  height: ${props => props.theme.layout.headerHeight};
+  color: #202020;
+`;
+
+const HeaderInner = styled.div`
+  height: 100%;
+  display: flex;
+  align-items: center;
+`;
+
+const SiteTitle = styled.span`
+  font-size: 1.2rem;
+  font-weight: 600;
+`;
+
+const Header = () => {
   return (
-    <Header>
+    <Container>
       <Wrapper>
         <HeaderInner>
           <SiteTitle>Here is a header</SiteTitle>
         </HeaderInner>
       </Wrapper>
-    </Header>
+    </Container>
   );
 };
+
+export default Header;
